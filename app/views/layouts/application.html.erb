@@ -7,8 +7,61 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div id="page">
+<div id="header">
+			<div>
+				<a href="<%= welcome_index_path %>" class="logo"><%= image_tag("logo.png") %></a>
+				<ul id="navigation">
+					<li class="selected">
+						<a href="<%= welcome_index_path %>">Home</a>
+					</li>
+					<li>
+						<a href="<%= welcome_about_path %>">About</a>
+					</li>
+					<li class="menu">
+						<a href="<%= welcome_projects_path %>">Projects</a>
+						<ul class="primary">
+							<li>
+								<a href="<%= welcome_proj1_path %>">proj 1</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menu">
+						<a href="<%= welcome_blog_path %>">Blog</a>
+						<ul class="secondary">
+							<li>
+								<a href="<%= welcome_singlepost_path %>">Single post</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="<%= welcome_contact_path %>">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 
 <%= yield %>
+
+<div id="footer">
+			<div class="connect">
+				<div>
+					<h1>FOLLOW OUR  MISSIONS ON</h1>
+					<div>
+						<a href="http://freewebsitetemplates.com/go/facebook/" class="facebook">facebook</a>
+						<a href="http://freewebsitetemplates.com/go/twitter/" class="twitter">twitter</a>
+						<a href="http://freewebsitetemplates.com/go/googleplus/" class="googleplus">googleplus</a>
+						<a href="http://pinterest.com/fwtemplates/" class="pinterest">pinterest</a>
+					</div>
+				</div>
+			</div>
+			<div class="footnote">
+				<div>
+					<p>&copy; 2023 BY SPACE PROSPECTION | ALL RIGHTS RESERVED</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </body>
 </html>
